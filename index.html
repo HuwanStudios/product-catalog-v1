@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+	<h1 id="header">Admin Dashboard</h1>
+	<!-- 
+    :: problem — Design an app to add Amazon products that has the following: 
+    - Name: 'Ring Video Doorbell - 1080p HD video',
+    - Price: 99,
+    - course: `MSIMBO24,
+    - :ID ,
+   - isPrime: true,
+   - productImage: 
+
+   - name
+   - age
+   - course
+   - manager
+
+    Goal:
+    Improve on your product catalog to allow users do the following:
+
+    The products are stored with objects literals inside the arrays
+    Instead of using the prompt, you will allow them input the product info directly
+    from the browser (hint: use querySelector and form event listener)
+    Show all the products they entered in the browser (hint: use a for..of loop)
+      
+   PSEUDO-CODE
+     [x] 1. [in HTML] Design the input Form (see v1)
+     2. [In JS] get the HTML element that we want to watch for an event on..
+     3. [In JS] add some EventListeners that watches for form submit
+     4. [In JS] when a form submit happens, get all the values form the input AND add to an array
+   -->
+	<form id="product-form">
+		<input type="text" id="product-name" placeholder="Name"/></br>
+		<input type="number" id="product-dob" placeholder="Age"/></br>
+		<!-- 
+    <label for="product-dob">Date Of Birth:</label></br>
+    <input type="date" id="product-dob" name="DOB"></br> 
+    -->
+		<label for="product-course">Course</label></br>
+		<select name="product-course" id="product-course">
+				<option value=""></option>
+        <option value="MSIMBO24">MSIMBO24</option>
+    </select></br>
+		<!-- 
+    <input type="number" id="product-id" placeholder="ID Number"/></br>
+		<input type="number" id="product-joindate" placeholder="Join Date"/></br> 
+    
+    <label for="product-start">Start date:</label>
+    <input type="date" id="product-start" name="trip-start" value="2018-07-22" min="1901-01-01" max="2008-12-31" />
+    -->
+
+		<label for="product-manager">Is a Manager?</label>
+		<input type="checkbox" id="product-manager" /></br>
+		<input type="submit" value="Add New Product" />
+    </form>
+
+    
+    <div>
+        <ul>
+              <li><p id="product-name-display"></p></li>
+          <!-- <li><p id="name-display" ></p></li> -->
+                  <li><p id="product-dob-display"></p></li>
+                  <li><p id="product-course-display"></p></li>
+          <li><p id="product-manager-display"></p></li>
+          <!-- <li><p id="product-name-display"></p></li> -->
+                  <li></li>
+        </ul>
+      </div>
+		<!-- <button id="btn-form">Choose File</button> -->
+		<!-- <input type="button" /> -->
+		<script src="src/script.js"></script>
+
+
+</body>
+
+</html>
